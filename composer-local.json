@@ -8,6 +8,9 @@
 		"greenpeace/planet4-plugin-blocks" : "dev-develop"
 	},
 	"scripts": {
-		"site:custom" : []
+		"core:language": "wp language core install it_IT; wp language core activate it_IT", 
+		"site:custom": [ 
+		"@core:language"
+		]
 	}
 }
