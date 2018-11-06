@@ -4,6 +4,7 @@
 	"license": "MIT",
 	"require": {
 		"greenpeace/planet4-child-theme" : "0.*",
+		"greenpeace/planet4-child-theme-italy" : "0.*",
 		"greenpeace/planet4-plugin-migrated-urls": "0.0.1"
 	},
 	"scripts": {
