@@ -1,16 +1,14 @@
 {
-	"name": "greenpeace/planet4-italy",
-	"description": "Greenpeace P4 Italy",
-	"license": "MIT",
-	"require": {
-		"greenpeace/planet4-child-theme" : "0.*",
-		"greenpeace/planet4-child-theme-italy" : "0.*",
-		"greenpeace/planet4-plugin-migrated-urls": "0.0.1"
-	},
-	"scripts": {
-		"core:language": "wp language core install it_IT; wp language core activate it_IT",
-		"site:custom": [ 
-			"@core:language"
-		]
-	}
+    "name": "greenpeace/planet4-italy",
+    "description": "Greenpeace P4 Italy",
+    "license": "MIT",
+    "require": {
+        "greenpeace/planet4-child-theme-italy" : "v0.*"
+    },
+    "scripts": {
+        "core:language": "wp language core install it_IT; wp language core activate it_IT",
+        "site:custom": [ 
+            "@core:language"
+        ]
+    }
 }
