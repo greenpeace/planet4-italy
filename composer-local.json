@@ -1,16 +1,17 @@
 {
-    "name": "greenpeace/planet4-italy",
-    "description": "Greenpeace P4 Italy",
-    "license": "MIT",
-    "require": {
-        "greenpeace/planet4-child-theme-italy" : "v0.*",
-        "wpackagist-plugin/leadin": "9.0.*",
-	"plugins/gravityformshubspot": "*"
-    },
-    "scripts": {
-        "core:language": "wp language core install it_IT; wp language core activate it_IT",
-        "site:custom": [ 
-            "@core:language"
-        ]
-    }
+  "name": "greenpeace/planet4-italy",
+  "description": "Greenpeace P4 Italy",
+  "license": "MIT",
+  "require": {
+    "greenpeace/planet4-child-theme-italy" : "v0.*",
+    "plugins/gravityformshubspot": "*"
+  },
+  "scripts": {
+    "core:language": "wp language core install it_IT; wp language core activate it_IT",
+    "core:gf-language": "mkdir -p public/wp-content/languages/gravityforms/; rsync -ar extra/gravityforms-it_IT/ public/wp-content/languages/gravityforms/",
+    "site:custom": [
+    "@core:language",
+    "@core:gf-language"
+  ]
+}
 }
