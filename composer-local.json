@@ -9,7 +9,7 @@
   "scripts": {
     "core:language": "wp language core install it_IT; wp language core activate it_IT",
     "site:custom": [
-    "@core:language"
-  ]
-}
+      "@core:language"
+    ]
+  }
 }
