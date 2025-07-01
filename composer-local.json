@@ -4,7 +4,8 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-italy" : "dev-main",
-    "plugins/gravityformshubspot": "*"
+    "plugins/gravityformshubspot": "*",
+    "greenpeace/planet4-master-theme": "dev-planet-7851-migrate-to-old-revision"
   },
   "scripts": {
     "core:language": "wp language core install it_IT; wp language core activate it_IT",
